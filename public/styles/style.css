@@ -1,0 +1,123 @@
+body {
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/background.png");
+}
+
+
+h1 {
+    color: #FFFDB2;
+    font-size: 80px;
+}
+
+.bunch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+
+#search-input {
+    pointer-events: all;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 50px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border: 0;
+    height: 40px;
+    width: 700px;
+    background-image: url("../images/magnifying-glass-svgrepo-com\ \(1\).svg");
+    background-size: 20px;
+    background-position: 650px center;
+    background-repeat: no-repeat;
+}
+
+input::placeholder {
+    color: black;
+}
+
+input:focus {
+    outline: solid #FFFDB2;
+}
+
+
+.random {
+    margin-top: 20px;
+    cursor: pointer;
+    pointer-events: all;
+    text-decoration: none;
+    color: #FFFDB2;
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 50px;
+    border: 0;
+    height: 40px;
+    width: 300px;
+    background-color: rgba(57, 63, 126, 0.5)    ;
+}
+
+.random:hover {
+    outline: solid #FFFDB2;
+}
+
+.itemtainer {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 50px;
+    width: 70%;
+    align-self: center;
+    background-color: rgba(118, 130, 109, 0.5)    ;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+    "a b"
+    "c c ";
+};
+
+#item-title {
+    grid-area: a;
+
+}
+
+#item-title * {
+    color: #FFFDB2;
+    font-size: 30px;
+    padding: 10px;
+}
+
+#item-image {
+    grid-area: b;
+}
+
+#desc {
+    grid-area: c;
+    color: #FFFDB2;
+    padding: 40px;
+    font-size: 15px;
+}
+
+footer {
+    display: flex;
+    bottom: 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(68, 108, 37, 0.5);
+}
+
+footer * {
+    color: #FFFDB2;
+}

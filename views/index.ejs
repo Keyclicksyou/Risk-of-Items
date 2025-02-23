@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,581;1,581&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Press+Start+2P&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Risk of Items</title>
+</head>
+<body>
+    <div class="bunch">
+        <h1>Risk of Items</h1>
+        <img class="icon" src="/images/icon.png" height="200">
+        <form action="/searchItem" method="POST">
+            <input type="text" name="search" placeholder="Search for an Item" id="search-input">
+        </form>
+        <a href="/getRandom"><button class="random">Get a Random Item!</button></a>
+    </div>
+    <div class="itemtainer">
+        <div id="item-title">
+            <h2><%= title %></h2>
+        </div>
+        <img id="item-image" height="100"  src=<%= picture %>>
+        <p id="desc"><%= description %></p>
+    </div>
+
+    <footer>
+        <h2>Hadye 2025</h2>
+    </footer>
+</body>
+</html>
