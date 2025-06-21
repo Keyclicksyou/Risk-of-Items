@@ -8,6 +8,9 @@ body {
     display: flex;
     flex-direction: column;
     background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -121,4 +124,48 @@ footer {
 
 footer * {
     color: #FFFDB2;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #search-input {
+        width: 80%;
+        background-position: 95% center;
+        height: 30px;
+        font-size: 12px;
+        background-size: 15px;
+        text-align: center;
+    }
+
+    #search-input::placeholder {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .itemtainer {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "a"
+            "b"
+            "c";
+        text-align: center;
+    }
+
+    #item-image {
+        justify-self: center;
+    }
+
+    #item-title * {
+        font-size: 24px;
+    }
+
+    footer {
+        position: relative;
+    }
 }
